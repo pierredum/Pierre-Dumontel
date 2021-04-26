@@ -78,7 +78,7 @@ ggplot(data2,aes(x = EDUCATION, fill=defaut, y = ..count.. / sum(..count..))) +
   labs(x = "EDUCATION", y="pourcentage") + 
   scale_y_continuous(labels = scales::percent)
 
-?CrossTable
+
 CrossTable(round(data2$SEX),(data2$EDUCATION),prop.t=F,prop.c=T,prop.r=T,prop.chisq=F,chisq=F,expected=F)
 CrossTable(data2$MARRIAGE, data2$EDUCATION, prop.t=F,prop.c=T,prop.r=T,prop.chisq=F,chisq=F,expected=F)
 
